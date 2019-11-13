@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+
+$theme-font: 'Muli', sans-serif;
+$main-color: #8f57fd;
+
+@mixin flex-container($justifyContent: center, $width: 100%) {
+  width: $width;
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+}
