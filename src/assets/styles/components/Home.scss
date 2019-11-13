@@ -1,0 +1,39 @@
+@import '../Media.scss';
+@import '../Vars.scss';
+
+.home__container {
+  @include flex-container();
+  flex-direction: column;
+  color: white;
+
+  & .home__container--profile {
+    border-radius: 50%;
+  }
+
+  & h1 {
+    font-weight: 700;
+  }
+
+  & h3 {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  & hr {
+    border: 0;
+    height: 3px;
+    background: #fff;
+    width: 30px;
+    margin-top: 20px;
+  }
+
+  & .home__container--networks {
+    @include flex-container();
+  }
+
+  & .home__container--networks ul {
+    list-style: none;
+    padding: 0px;
+    @include flex-container(space-around, 15%);
+  }
+}
