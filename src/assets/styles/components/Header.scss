@@ -7,23 +7,23 @@
   height: 100px;
   top: 0px;
   width: 100%;
-}
 
-.header__menu {
-  @include flex-container();
-}
+  & .header__menu {
+    @include flex-container();
 
-.header__menu ul {
-  list-style: none;
-  padding: 0px;
-  @include flex-container(space-around, 70%);
-}
+    & ul {
+      list-style: none;
+      padding: 0px;
+      @include flex-container(space-around, 70%);
+    }
 
-.header__menu li a {
-  color: white;
-  text-decoration: none;
-}
+    & li a {
+      color: white;
+      text-decoration: none;
+    }
 
-.header__menu li a:hover {
-  text-decoration: underline;
+    & li a:hover {
+      text-decoration: underline;
+    }
+  }
 }

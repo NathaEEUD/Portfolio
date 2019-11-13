@@ -1,0 +1,46 @@
+@import '../Media.scss';
+@import '../Vars.scss';
+
+#about {
+  @include flex-container();
+  margin: 20px 0;
+
+  & .about__container {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 0 20px;
+    color: white;
+
+    & p {
+      text-align: justify;
+
+      & a {
+        color: white;
+        text-decoration: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    & ul {
+      @include flex-container(space-around);
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0px;
+
+      & .about__container--item {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 5px 0;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 10px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}

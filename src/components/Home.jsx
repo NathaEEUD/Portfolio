@@ -6,7 +6,7 @@ import linkedinIcon from '../assets/static/linkedin-5-32.png';
 import twitterIcon from '../assets/static/twitter-5-32.png';
 
 const Home = () => (
-  <section className='home'>
+  <section id='home'>
     <div className='home__container'>
       <img className='home__container--profile' src={profilePicture} alt='Profile' />
       <h1>Nathaly Riaño Bejarano</h1>
