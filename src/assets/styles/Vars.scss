@@ -3,9 +3,32 @@
 $theme-font: 'Muli', sans-serif;
 $main-color: #8f57fd;
 
+@function main-color-alfa($alfa: 0.5) {
+  @return rgba(255, 255, 255, $alfa);
+}
+
 @mixin flex-container($justifyContent: center, $width: 100%) {
   width: $width;
   display: flex;
   justify-content: $justifyContent;
   align-items: center;
+}
+
+@mixin style-container() {
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: main-color-alfa(0.2);
+}
+
+@mixin technology-item($font-weight: bold) {
+  margin: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0;
+  font-weight: $font-weight;
+  letter-spacing: 2px;
+  color: white;
+  background-color: main-color-alfa(0.3);
 }

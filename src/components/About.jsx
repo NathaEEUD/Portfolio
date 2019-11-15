@@ -7,8 +7,8 @@ const About = () => (
       <h2>Sobre Mí</h2>
       <p>
         Hola! Soy Nathaly Riaño Bejarano, Ingeniera Electrónica de la Universidad Distrital y
-        Estudiante de Platzi, apasionada por el aprendizaje constante, el Desarrollo Web,
-        Inteligencia Artificial y tecnologías como IOT, Realidad Aumentada y Realidad Virtual.
+        Estudiante de Platzi, apasionada por el aprendizaje constante, principalmente en Desarrollo
+        Web, Inteligencia Artificial y tecnologías como IOT, Realidad Aumentada y Realidad Virtual.
       </p>
       <p>
         En{' '}
@@ -18,9 +18,9 @@ const About = () => (
         podrás encontrar los certificados de los cursos que he aprobado.
       </p>
       <p>
-        Actualmente, soy Desarrolladora Web usando el stack MEAN, he participado en el Desarrollo
-        FrontEnd de varios proyectos y, a lo largo de mi carrera, he utilizado las siguientes
-        tecnologías:
+        Actualmente, me desempeño como Desarrolladora Web usando el stack MEAN, he participado en el
+        Desarrollo FrontEnd de varios proyectos y, a lo largo de mi carrera, he utilizado las
+        siguientes tecnologías:
       </p>
       <ul>
         <li className='about__container--item'>Git</li>
