@@ -1,0 +1,11 @@
+@import '../Vars.scss';
+@import '../Media.scss';
+
+#portfolio {
+  @include flex-container();
+  margin: 20px 0;
+
+  & .portfolio__container {
+    @include style-container();
+  }
+}

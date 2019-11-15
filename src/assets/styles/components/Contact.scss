@@ -1,0 +1,18 @@
+@import '../Media.scss';
+@import '../Vars.scss';
+
+#contact {
+  color: white;
+  display: flex;
+  height: 100px;
+  top: 0px;
+  width: 100%;
+
+  & .contact__container {
+    @include flex-container(space-around);
+
+    & li {
+      margin-right: 5px;
+    }
+  }
+}

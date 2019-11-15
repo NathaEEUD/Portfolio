@@ -1,0 +1,66 @@
+@import '../Vars.scss';
+@import '../Media.scss';
+
+.portfolio__project {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-left: main-color-alfa(0.2) solid 4px;
+  border-bottom: main-color-alfa(0.2) solid 4px;
+  border-top: main-color-alfa(0.2) solid 1px;
+  border-right: main-color-alfa(0.2) solid 1px;
+  // font-size: 20px;
+
+  & .portfolio__project--details {
+    width: 50%;
+    min-height: 275px;
+    max-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & .portfolio__project--title {
+      margin-top: 0;
+
+      & a {
+        color: white;
+      }
+    }
+
+    & .portfolio__project--course {
+      font-size: 14px;
+    }
+
+    & .portfolio__project--course,
+    & .portfolio__project--date,
+    & .portfolio__project--url {
+      margin: 10px 0;
+    }
+
+    & ul {
+      @include flex-container(center);
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0px;
+      margin: 0;
+
+      & .portfolio__project--item {
+        @include technology-item(light);
+      }
+    }
+  }
+
+  & .portfolio__project--image-container {
+    width: 45%;
+    margin: 0;
+    text-align: center;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}

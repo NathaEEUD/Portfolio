@@ -1,0 +1,16 @@
+@import '../Media.scss';
+@import '../Vars.scss';
+
+#networks {
+  width: 100%;
+
+  & .networks__container {
+    @include flex-container();
+
+    & ul {
+      list-style: none;
+      padding: 0px;
+      @include flex-container(space-around, 15%);
+    }
+  }
+}

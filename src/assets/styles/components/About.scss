@@ -1,0 +1,36 @@
+@import '../Media.scss';
+@import '../Vars.scss';
+
+#about {
+  @include flex-container();
+  margin: 20px 0;
+
+  & .about__container {
+    @include style-container();
+
+    & p {
+      text-align: justify;
+
+      & a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    & ul {
+      @include flex-container(center);
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0px;
+
+      & .about__container--item {
+        @include technology-item();
+      }
+    }
+  }
+}

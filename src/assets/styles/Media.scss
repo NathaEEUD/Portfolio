@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1200px) {
+  #portfolio {
+    & .portfolio__project--item {
+      margin: 9px;
+      font-size: 14px;
+    }
+
+    & .portfolio__project--details {
+      width: 55%;
+    }
+
+    & .portfolio__project--description {
+      font-size: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #about .about__container,
+  #portfolio .portfolio__container {
+    width: 85%;
+  }
+
+  #about .about__container {
+    & p {
+      font-size: 14px;
+    }
+
+    & .about__container--item {
+      font-size: 12px;
+    }
+  }
+
+  #portfolio {
+    & .portfolio__project--item {
+      margin: 8px;
+      font-size: calc(12px + 2 * ((100vw - 768px) / 224));
+    }
+
+    & .portfolio__project--description {
+      font-size: calc(13px + 2 * ((100vw - 768px) / 224));
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 20px;
+
+    #burguer__menu {
+      display: block;
+    }
+
+    & .header__menu {
+      position: fixed;
+      background-color: rgba(143, 87, 253, 0.9);
+      z-index: 3;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+
+      & ul {
+        flex-direction: column;
+      }
+    }
+
+    & .is-active {
+      left: 0;
+    }
+  }
+
+  #about .about__container,
+  #portfolio .portfolio__container {
+    width: 90%;
+  }
+
+  .portfolio__project {
+    flex-direction: column;
+  }
+
+  #portfolio .portfolio__project--details {
+    width: 100%;
+    max-height: max-content;
+    min-height: min-content;
+    font-size: 16px;
+  }
+
+  .portfolio__project .portfolio__project--image-container {
+    width: 60%;
+  }
+
+  .contact__container-info > p:nth-child(1) {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  #networks li {
+    margin-right: 3px;
+  }
+
+  #about .about__container p {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 245));
+  }
+
+  #portfolio {
+    & .portfolio__project--item {
+      margin: 3px;
+    }
+
+    & .portfolio__project--description {
+      font-size: calc(12px + 2 * ((100vw - 320px) / 245));
+    }
+  }
+
+  #about .about__container ul .about__container--item {
+    margin: 3px;
+    font-size: 10px;
+  }
+
+  #about .about__container,
+  #portfolio .portfolio__container {
+    padding: 0 10px;
+  }
+
+  .portfolio__project {
+    padding: 10px;
+  }
+
+  .portfolio__project .portfolio__project--image-container {
+    width: 90%;
+  }
+}
