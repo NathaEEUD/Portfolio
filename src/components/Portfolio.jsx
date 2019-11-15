@@ -1,6 +1,18 @@
 import React from 'react';
 import '../assets/styles/components/Portfolio.scss';
 import PortfolioItem from './PortfolioItem';
+import invieImg from '../assets/static/invie-mockup.png';
+import platziConfHawaiImg from '../assets/static/platzi-conf-hawai-mockup.png';
+import moviesLandingImg from '../assets/static/movies-landing-mockup.png';
+import platziVideoLandingImg from '../assets/static/platzi-video-landing-mockup.png';
+import caloriesCounterImg from '../assets/static/calories-counter-mockup.png';
+import platziVideoImg from '../assets/static/platzi-video-mockup.png';
+import ticTacToeImg from '../assets/static/tictactoe-mockup.png';
+import estacionTopconImg from '../assets/static/estacion-topcon-mockup.png';
+import votoElectronicoImg from '../assets/static/voto-electronico-mockup.png';
+import transcriptorImg from '../assets/static/transcriptor-mockup.png';
+import visitantesImg from '../assets/static/visitantes-mockup.png';
+import akountgoImg from '../assets/static/akountgo-mockup.png';
 
 const projects = [
   {
@@ -10,7 +22,7 @@ const projects = [
       'Invie es el proyecto resultado de los cursos de Desarrollo Web Online y Responsive Design de Platzi del 2016',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://nathaeeud.github.io/invie-responsive/',
-    image: './src/assets/static/invie-mockup.png',
+    image: invieImg,
   },
   {
     title: 'Platzi Conf Hawai',
@@ -18,7 +30,7 @@ const projects = [
     description: 'Platzi Conf Hawai es el proyecto del curso de Bootstrap de Platzi',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     link: 'https://nathaeeud.github.io/Bootstrap-Platzi/',
-    image: './src/assets/static/platzi-conf-hawai-mockup.png',
+    image: platziConfHawaiImg,
   },
   {
     title: 'Movies Landing',
@@ -26,7 +38,7 @@ const projects = [
     description: 'Movies Landing es el primer reto del curso de CSS Grid Layout de Platzi',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://nathaeeud.github.io/Movies-Landing/',
-    image: './src/assets/static/movies-landing-mockup.png',
+    image: moviesLandingImg,
   },
   {
     title: 'Platzi Video Landing',
@@ -34,7 +46,7 @@ const projects = [
     description: 'Platzi Video Landing es el segundo reto del curso de CSS Grid Layout de Platzi',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://nathaeeud.github.io/Platzi-Video-Landing/',
-    image: './src/assets/static/platzi-video-landing-mockup.png',
+    image: platziVideoLandingImg,
   },
   {
     title: 'Calories Counter',
@@ -43,7 +55,7 @@ const projects = [
       'Calories Counter es el proyecto del curso de Programación Funcional con JavaScript',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     link: 'https://nathaeeud.github.io/JavaScript-Functional-Programming-Platzi/',
-    image: './src/assets/static/calories-counter-mockup.png',
+    image: caloriesCounterImg,
   },
   {
     title: 'Platzi Video',
@@ -51,7 +63,7 @@ const projects = [
     description: 'Platzi Video es el proyecto del curso de JQuery a JavaScript',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://nathaeeud.github.io/JQuery-to-JavaScript-Platzi/',
-    image: './src/assets/static/platzi-video-mockup.png',
+    image: platziVideoImg,
   },
   {
     title: 'Tic Tac Toe',
@@ -60,7 +72,7 @@ const projects = [
       'Tic Tac Toe es un juego multijugador implementado con NodeJs, ExpressJs y Socket.io con conexión a MongoDb, el cual, gracias a la tecnología de Websocket, permite armar salas para máximo dos jugadores, mostrar el histórico de juegos iniciados, empatados y ganados y la lista de juegos pausados con posibilidad de reanudarlos',
     technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJs', 'ExpressJs', 'Socket.io', 'MongoDb'],
     link: 'https://github.com/NathaEEUD/Project-TicTacToe',
-    image: './src/assets/static/tictactoe-mockup.png',
+    image: ticTacToeImg,
   },
   {
     title: 'Estación Geodésica GNSS de la Universidad Distrital',
@@ -69,7 +81,7 @@ const projects = [
       'Rediseño y desarrollo de la página web de la Estación Geodésica GNSS de la Universidad Distrital implementando Responsive Design',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     link: 'https://rita.udistrital.edu.co/gps/',
-    image: './src/assets/static/estacion-topcon-mockup.png',
+    image: estacionTopconImg,
   },
   {
     title: 'Voto Electrónico',
@@ -78,7 +90,7 @@ const projects = [
       'Apoyo en la maquetación de la plataforma web: Voto electrónico para el proceso de inscripciones y elecciones de los sistemas SDACP y DRAFE de la Secretaria Distrital de Cultura, Recreación y Deporte de Bogotá, garantizando su correcta visualización en cualquier tamaño de pantalla por medio de Responsive Design y asegurando la accesibilidad web bajo el estándar W3C',
     technologies: ['ReactJs', 'Redux', 'CSS'],
     link: '',
-    image: './src/assets/static/voto-electronico-mockup.png',
+    image: votoElectronicoImg,
   },
   {
     title: 'Transcriptor',
@@ -97,7 +109,7 @@ const projects = [
     ],
     link: '',
     width: '200',
-    image: './src/assets/static/transcriptor-mockup.png',
+    image: transcriptorImg,
   },
   {
     title: 'Control de Visitantes',
@@ -116,7 +128,7 @@ const projects = [
     ],
     link: '',
     width: '200',
-    image: './src/assets/static/visitantes-mockup.png',
+    image: visitantesImg,
   },
   {
     title: 'Akount Go',
@@ -125,7 +137,7 @@ const projects = [
     technologies: ['ReactJs', 'Redux', 'Sass'],
     link: 'https://app.akountgo.com/',
     width: '200',
-    image: './src/assets/static/akountgo-mockup.png',
+    image: akountgoImg,
   },
 ];
 
