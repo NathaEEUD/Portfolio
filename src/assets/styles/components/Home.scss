@@ -30,10 +30,4 @@
   & .home__container--networks {
     @include flex-container();
   }
-
-  & .home__container--networks ul {
-    list-style: none;
-    padding: 0px;
-    @include flex-container(space-around, 15%);
-  }
 }
