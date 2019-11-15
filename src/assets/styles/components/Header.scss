@@ -8,8 +8,21 @@
   top: 0px;
   width: 100%;
 
+  & #burguer__menu {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    display: none;
+  }
+
   & .header__menu {
     @include flex-container();
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: boldw;
 
     & ul {
       list-style: none;
